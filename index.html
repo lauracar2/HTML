@@ -1,87 +1,74 @@
+//html intrudução e estudo de elementos iniciante //
+
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">    // introdução //
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form.com</title>
-</head>
+    <title>Document</title> // titulo //
+</head> // cabeça //
 <body>
-    <head>
-    <title>Castro</title>
- 
-</head>
-<body>
-  <div>
-    <h1 id="titulo">Cadastro de DEVs</h1>
-    <p id="subtitulo">Complete suas informações</p>
-  </div>
-  <form>
-    <fieldset class="grupo">
-      <div class="campo">
-      <label for="nome"><strong>Nome</strong></label>
-      <input type="text" name="nome" id="nome" required></input>
-      </div>
-      <div class="campo">
-         <label for="sobrenome"><strong>Sobrenome</strong></label>
-      <input type="text" name="sobrenome" id="sobrenome" required>
-        </div>
-      </fieldset>
-  <br>
-  <div class="campo">
-        <label for="email"><strong>Email</strong></label>
-      <input type="email" name="email" id="email" required>
-  </div>
-  <br>
-  <div class="campo">
-    <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
-    <label>
-    <input type="radio" nome="devweb" value="frontend" checked>Front-end
-    </input>
-    </label>
-  <label>
-  <input type="radio" nome="devweb" value="backend">Back-end
-    </input>
-  </label>
-  <label>
-  <input type="radio" nome="devweb" value="fullstack">Fullstack
-    </input>
-</label>
-    </div>
-<br>
-<div class="campo">
-  <label for="senioridade"><strong> Senioridade </strong></label>
-  <select id="senioridade">
-    <option selected disable value="">Selecione</option>
-    <option>Junior</option>
-        <option>Pleno</option>
-        <option>Senior</option> </select>
- 
-</div>
-<fieldset class="grupo">
-  <div class="campo">
-    <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
-    <input type="checkbox" id="tecnologia1" value="HTML">
-    <label type="tecnologia1">HTML</label>
-     <input type="checkbox" id="tecnologia2" value="CSS">
-    <label type="tecnologia2">CSS</label>
-     <input type="checkbox" id="tecnologia3" value="javascript">
-    <label type="tecnologia3">Javascript</label>
-     <input type="checkbox" id="tecnologia4" value="PHP">
-    <label type="tecnologia4">PHP</label>
-     <input type="checkbox" id="tecnologia5" value="C#">
-    <label type="tecnologia5">C#</label>
-     <input type="checkbox" id="tecnologia6" value="python">
-    <label type="tecnologia6">Python</label>
-     <input type="checkbox" id="tecnologia7" value="java">
-    <label type="tecnologia7">Java</label>
-  </div>
-  </fieldset>
-<div class="campo">
-  <br>
-  <label><strong>Conte um pouco da sua experiência:</strong></label>
-  <textarea row="6" style="width: 26em" id="experiencia" nome="experiencia">
+    // corpo //
 </body>
 </html>
+// 
+<h1></h1> // h1,h2,h3,h4 é o que vai definir o tamanho da fonte dentro do código html//
+// o h1 defini o um título exemplo
+<h1>Hello word</h1>
+<p></p> //é usado como parágrafo //
 
+// nunca pule a tag end //
+
+<br> é usada paraquebra de linha 
+
+exemplo:
+<p>This is a <br> paragraph with a line break.</p>
+
+
+<a> href são atributos a links
+    exemplo:
+
+    <a href="https://www.w3schools.com">Visit W3Schools</a>
+
+    <img>src são atributos a imagens 
+
+    exemplo de como se usa:
+    <img src="img_girl.jpg">
+
+    A tag também deve conter os atributos and, que especificam a largura e altura da imagem (em pixels):<img>width height
+
+Exemplo
+<img src="img_girl.jpg" width="500" height="600">
+
+
+O atributo alt
+O atributo necessário para a tag especifica um texto alternativo para uma imagem, se a imagem por algum motivo não puder ser exibida. Isso pode ser devido a uma conexão lenta ou um erro no atributo, ou se o usuário usar uma tela leitor.alt<img>src
+
+Exemplo
+<img src="img_girl.jpg" alt="Girl with a jacket">
+
+Exemplo
+Veja o que acontece se tentarmos exibir uma imagem que não existe:
+
+<img src="img_typo.jpg" alt="Girl with a jacket">
+
+
+O atributo style
+O atributo é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.style
+
+Exemplo
+<p style="color:red;">This is a red paragraph.</p>
+
+
+Você deve sempre incluir o atributo dentro da tag, para declarar o idioma da página da Web. Isso destina-se a ajudar os mecanismos de pesquisa e navegadores.lang<html>
+
+O exemplo a seguir especifica o inglês como o idioma:
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+...
+</body>
+</html>
