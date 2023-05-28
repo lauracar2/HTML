@@ -1,1 +1,319 @@
+ENTRADA!!
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tela de inicio</title>
+</head>
+<body>
+    <style>
+        body{
+            width: 400px;
+            height: 699px;
+            background: linear-gradient(to bottom, blue, purple);
+           transition: background-color 0.5s ease;  
+    
+        }
+        h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;  
+            transform: translate(-50%,-600%);
+            color: white;
+             
+        }
+        img{
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-48%,-50%);
+            width: 30%; 
+            border-radius: 10px;
+            
+        }
+        button{
+            background-color: rgba(255, 0, 0, 0.6);
+            background-color: rgba(0, 400, 0, 0.6);
+            background-color: rgba(44, 0, 250, 0.6);
+            border-radius: 10px;
+            padding: 5px;
+            width: 3%; 
+            position:absolute;right:20px;bottom:650px;
+            color: white;
+       
+
+        }
+        button:hover{
+            background-color: black;
+        }
+    </style>
+   <div>
+    <h1>happiness</h1>
+  </div> 
+
+  <div>
+ <img src="s.jpeg">
+ <button onclick="document.location='index.php'">sair</button>
+  </div>
+
+</body>
+</html>
+
+LOGIN
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto_A3.con</title>
+    <style>
+
+        body{
+           font-family: Arial, Helvetica, sans-serif;
+           width: 200px;
+           height: 699px;
+           background: linear-gradient(to bottom, blue, purple);
+           transition: background-color 0.5s ease;
+          
+
+        }
+        
+        div{
+            background-color:black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 70px;
+            color: white;
+            border-radius: 20px;
+         
+            
+            
+        }
+        input{
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            border-radius: 10px;
+
+        }
+        button{
+            background-color:  #00008b;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            color: white;
+            border-radius: 10px;
+
+        }
+        button:hover{
+            background-color: #808080;
+        }
+    </style>
+</head>
+<body>
+  <div>
+
+    <form id="login"  action="logado.php" method="POST">
+   <h1>Login</h1>
+
+    <input type="text" name= "login" placeholder= "login">
+    <br>
+    <br>
+    <input type="password" name="senha" placeholder= "senha">
+    <br>
+    <br>
+    <button>Enviar</button>
+
+</form>
+    </div>
+</body>
+</html>
+
+CADASTROOOOOO
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+      body{
+           font-family: Arial, Helvetica, sans-serif;
+           width: 200px;
+           height: 699px;
+           background: linear-gradient(to bottom, blue, purple);
+           transition: background-color 0.5s ease;
+          
+
+        }
+ div{
+    background-color:black;
+    color: white;
+    position: absolute;
+    transform: translate(170%,40%);
+    border-radius: 20px;
+    padding:40px ;
+    width: 17%;
+   
+}
+input{
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            border-radius: 10px;
+            
+        }
+
+        button{
+            background-color:  #00008b;
+            border: none;
+            padding: 15px;
+            width: 96%;
+            color: white;
+            border-radius: 10px;
+            transform: translate(-0%,20%);
+        }
+        button:hover{
+            background-color: #808080;
+        }       
+
+
+
+
+
+</style>
+
+
+<body>
+<div>
+
+<form id="cadasstro" method="POST">
+<h1>Cadastro</h1>
+
+<input type="text" name= "name" placeholder= "login">
+<br>
+<br>
+<input type="password" name="senha" placeholder= "senha">
+<br>
+<br>
+<input type="" name="login" placeholder= "email">
+<button>Enviar</button>
+
+</form>
+</div>
+</body>
+</html>
+
+
+
+ INDEX
+ 
+ 
+ 
+ 
+ 
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN|CADASTRO</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+            top: 100%;
+            left: 100%;
+            transform: translate(-25%,-80%);
+            padding: 150px;
+           color: white;
+           width: 150%;
+
+
+
+    }
+  
+
+</style>
+
+
+
+<style>
+ 
+ 
+
+body{
+
+    width: 400px;
+    height: 699px;
+    background: linear-gradient(to bottom, blue, purple);
+    transition: background-color 0.5s ease;
+
+    
+}
+
+
+
+
+div{
+
+           position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 80px;
+           color: white;
+}
+
+
+
+
+    button{
+        
+        background-color: rgb(0, 0, 0);
+            border: none;
+            padding: 25px;
+            width: 150%;
+            color: white;
+            border-radius: 10px;
+            
+            
+    }
+    button:hover{
+            background-color: rgb(54, 45, 45);
+        }
+   
+    
+</style>
+<body>
+<div>
+    <h1>Acesse ou se cadastre em nosso site :) </h1>
+</div>
+<div>
+<button onclick="document.location='login.php'">Login</button>
+<br><br>
+<button onclick="document.location='cadastro.php'">Cadastro</button>
+</div>
+</body>
+</html>
+
+
+
+
 
