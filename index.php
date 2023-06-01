@@ -1,63 +1,50 @@
+<?php
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN|CADASTRO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
 </head>
-<style>
-    h1{
-        text-align: center;
-            top: 100%;
-            left: 100%;
-            transform: translate(-25%,-100%);
-            padding: 150px;
-           color: white;
-           width: 150%;
-    }
-</style>
 <style>
 
 body{
-font-family: Arial, Helvetica, sans-serif;
-           background-image: linear-gradient(45deg,rgb(13, 1, 19),rgb(198, 54, 64));
+			width: 200px;
+            height: 700px;
+            background: linear-gradient(to bottom, blue, purple);
+           transition: background-color 0.5s ease; 
+		   }
+           h1{
 
-}
-
-div{
-
-    position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            padding: 80px;
-           color: white;
-}
-    button{
-        
-        background-color: rgb(0, 0, 0);
-            border: none;
-            padding: 25px;
-            width: 150%;
+            transform: translate(330%,80%) ;
             color: white;
-            border-radius: 10px;
-            
-    }
-    button:hover{
-            background-color: rgb(54, 45, 45);
-        }
-   
-    
+           }
+           a{
+            transform: translate(60%,30%) ;
+            color: white;
+           }
+
 </style>
+
 <body>
-<div>
-    <h1>Acesse ou se cadastre em nosso site :) </h1>
-</div>
-<div>
-<button onclick="document.location='inicio.php'">Login</button>
-<br><br>
-<button onclick="document.location='cadasstro.php'">Cadastro</button>
-</div>
+    <center>
+        <h1>Olá,
+        <?php
+        if(isset($_SESSION['nome'])==null){
+        ?>
+            visitante</h1>
+        <a href="login.php">login</a><br>
+        <?php } else {
+            echo $_SESSION['nome']; ?>
+
+        </h1><a href="cadastro.php">Cadastrar</a><br>
+        <a href="logout.php">Sair</a>
+        <?php } ?>
+    </center>
 </body>
 </html>
